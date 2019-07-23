@@ -6,7 +6,8 @@
 # @File    : urls.py
 # @Software: PyCharm
 from django.conf.urls import url
+from goods import views
 
-urlpatterns=[
-    # url()
+urlpatterns = [
+    url(r'^$', views.index, name='index'),  # 首页
 ]
